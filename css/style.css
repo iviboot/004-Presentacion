@@ -1,0 +1,162 @@
+.en {
+    color: black;
+}
+.es {
+    color: rgb(58, 80, 80);
+}
+.check{
+    position: relative;
+    width: 50px;    
+}
+.check:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #333;
+    border-radius: 25px;
+}
+.check::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+.check:checked::after{
+    left: 25px;
+    border: 2px solid #00a1ff;
+}
+.check:checked::before{
+    background: #9fd0ec;
+}
+#main{
+    background-color:rgb(95, 93, 93);
+    opacity: .7;
+    height: 65px;
+    
+}
+
+#content{
+    border: 3px solid #ff7c02;
+    background-color: rgb(255, 255, 255);
+    height: 35px;
+    opacity: .7; 
+    
+    
+}
+body{
+    background-color: rgb(14, 14, 14);
+    min-width: 300px;/*responsivo*/
+    flex-wrap: wrap;/*responsivo*/
+    margin-bottom: 0px;/*responsivo opcional*/
+
+    
+}
+
+
+
+#circ{
+    
+    display: grid;
+    place-items: center;
+   
+   
+    
+    
+}
+img{
+   /* border: 7px solid rgb(245, 152, 31);
+    width: 220px;
+    height: 190px;
+    border-radius: 50%;*/
+    
+
+    width: 290px;
+    height: 260px;
+    border: 7px solid #ff7300;
+    
+    animation-name: mianimacion0;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    position: relative; left: 0px;top: 0px;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+
+}
+
+@keyframes mianimacion0 {
+    0%{border: solid rgb(245, 152, 31);}
+    25%{border: solid #00a1ff;}
+    50%{border: solid #ff7300;}
+    75%{border: solid #01d898;}
+    100%{border: solid #ccc;}
+}
+
+#text-color{
+    color: azure;
+    display: grid;
+    place-items: center;
+}
+/*card---*/
+
+.tarjeta{
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  width: 250px;
+  right: 100px;
+  color: azure;
+  text-align: center;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius:15px;
+  font-family: sans-serif;
+}
+.titulo{
+  font-size: 20px;
+  padding: 10px 10px 0 10px;;
+}
+.cuerpo img{
+  padding: 0%;
+  width: 230px;
+  right: 100px;
+}
+.pie{
+  background: #00c0fa;
+  border-radius:0 0 15px 15px;
+  padding: 10px;
+  text-align:center;
+}
+.pie a{
+  text-decoration: none;
+  color: white;
+}
+.pie a:after {
+  position: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: ""
+}
+
+#presentacion{
+    text-align: center;
+    color:azure
+    
+}
+
+
+
+
+
+ 
+
+
