@@ -1,6 +1,6 @@
 Desarrollo Web.
 
-web estatica
+web estatica.
 
 interaccion entre el ingles y español.
 
